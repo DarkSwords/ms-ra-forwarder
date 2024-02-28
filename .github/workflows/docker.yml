@@ -6,7 +6,7 @@ on:
     branches: [ master ]
 
 env: 
-  DOCKER_REPOSITORY: dockerhub16/ms-ra-forwarder
+  DOCKER_REPOSITORY: ${{ secrets.DOCKERHUB_USERNAME }}/ms-ra-forwarder
 
 jobs:
   build:
